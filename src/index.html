@@ -1,21 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html>
+<html lang="ca">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/styles/main.scss">
+    <title>ÀLEX BARBERÀ</title>
   </head>
   <body>
-    <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-    <h1 class="uoc-title">Hello, UOC!</h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
-    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <header class="header__hero">
+      <nav class="flex--row">
+          <ul class="list list-inline">
+            <li><a class="links" href="#sobre-mi">Sobre mi</a></li>
+            <li><a class="links" href="#habilitats">Habilitats</a></li>
+            <li><a class="links" href="#projectes">Projectes</a></li>
+            <li><a class="links" href="#experiencia">Experiencia</a></li>
+          </ul>
+      </nav>
+      <div class="intro">
+        <h1>Hello, sóc Àlex</h1>
+        <p>Desenvolupador Front-End</p>
+        <a class="btn links" href="#contacta">Contacta</a>
+      </div>
+    </header>
+    <main>
+      <p class="frase">"La perserverància et farà assolir els teus objectius"</p>
+      <article class="block">
+        <section id="sobre-mi" class="block--40 block--mr-50">
+          <h2>Qui sóc</h2>
+          <hr>
+          <p>Hem dic Àlex Barberà i sóc desenvolupador Front-end. M'apassionen les noves tecnologies i he complementat els meus estudis amb l'aprenentage autodidàcta. El món digital està en constant evolució i penso que és molt important estar al dia de les últimes novetats. </p>
+        </section>
+        <section id="habilitats" class="block--50">
+          <h2>Habilitats</h2>
+          <hr>
+          <div class="progress-bar card">
+            <span class="progress-bar--fill progress-bar--90">HTML5</span>
+          </div>
+          <div class="progress-bar card" >
+            <span class="progress-bar--fill progress-bar--80">CSS3</span>
+          </div>
+          <div class="progress-bar card" >
+            <span class="progress-bar--fill progress-bar--40">Javascript</span>
+          </div>
+          <div class="progress-bar card" >
+            <span class="progress-bar--fill progress-bar--90">WordPress</span>
+          </div>
+          <div class="progress-bar card" >
+            <span class="progress-bar--fill progress-bar--70">SEO</span>
+          </div>
+      </section>
+    </article>
+
+      <article id="projectes">
+        <h2>Projectes</h2>
+        <hr>
+        <section class="block">
+          <figure class="card">
+            <img class="block--100" src="assets/images/baetravel.jpg" alt="">
+            <figcaption><a class="links" href="https://www.baestravel.com/" target="_blank">Baestravel</a></figcaption>
+          </figure>
+          <figure class="card">
+            <img class="block--100" src="assets/images/lanzamEsp.jpg" alt="">
+            <figcaption><a class="links" href="https://lanzamientosespaciales.com/" target="_blank">Lanzamientosespaciales</a></figcaption>
+          </figure>
+          <figure class="card">
+            <img class="block--100" src="assets/images/baesaudi.jpg" alt="">
+            <figcaption><a class="links" href="https://baesaudiovisual.com/" target="_blank">Baesaudiovisual</a></figcaption>
+          </figure>
+          <figure class="card">
+            <img class="block--100" src="assets/images/nutrisalud.jpg" alt="">
+            <figcaption><a class="links" href="https://cristinanutrisalud.com/">Cristinanutrisalud</a></figcaption>
+          </figure>
+          <figure class="card">
+            <img class="block--100" src="assets/images/circuit.jpg" alt="">
+            <figcaption><a class="links" href="http://www.circuitcalafat.com/" target="_blank">CircuitCalafat</a></figcaption>
+          </figure>
+          <figure class="card">
+            <img class="block--100" src="assets/images/coperello.jpg" alt="">
+            <figcaption><a class="links" href="https://coperello.es/" target="_blank">Coperello</a></figcaption>
+          </figure>  
+        </section>
+      </article>
+
+      <article id="experiencia">
+        <h2>Experiència</h2>
+        <hr>
+        <div class="block">
+
+          <section class="block--50">
+              <h3><i class="fas fa-university"></i> Estudis</h3>
+              <div>
+
+                <div class="block__element card">
+                  <span>2020 - Actual</span>
+                  <h4 class="block__element-title">UNIVERSITAT OBERTA DE CATALUNYA</h4>
+                  <p>Máster de Desenvolupament de llocs i aplicacions web.</p>
+                </div> 
+                <div class="block__element card">
+                  <span>2013-2017</span>
+                  <h4 class="block__element-title">UNIVERSITAT ROVIRA I VIRGILI</h4>
+                  <p>Grau d'Administració i Direcció d'Empreses</p>
+                </div>  
+                <div class="block__element card">
+                  <span>2011-2013</span>
+                  <h4 class="block__element-title">IES BAIX EBRE</h4>
+                  <p>Cicle formatiu de Grau Superior d'Administració i Finances</p>
+                </div>
+                <div class="block__element card">
+                  <span>2008-2010</span>
+                  <h4 class="block__element-title">INSTITUT BLANCA D'ANJOU</h4>
+                  <p>Batxillerat Científic</p>
+                </div>
+
+              </div> 
+          </section>
+
+          <section class="block--50">
+            <h3> <i class="fas fa-university"></i> Carrera professional</h3>
+            <div>
+
+              <div class="block__element card">
+                <span>2019</span>
+                <h4 class="block__element-title">InfoticStudio, S.A.</h4>
+                <p>Desenvolupar i mantenir llocs web</p>
+              </div>
+              <div class="block__element card">
+                <span>2017-2019</span>
+                <h4 class="block__element-title">Consultebre</h4>
+                <p>Auxiliar administratiu</p>
+              </div> 
+              <div class="block__element card">
+                <span>2016-2018</span>
+                <h4 class="block__element-title">Pchard</h4>
+                <p>Administraiu i comptable</p>
+              </div>
+              <div class="block__element card">
+                <span>2017</span>
+                <h4 class="block__element-title">Via Augusta</h4> 
+                <p>Administratiu i comptable</p>
+              </div>
+
+            </div>
+          </section> 
+
+        </div>
+      </article> 
+
+      <article id="contacta">
+        <h2>Contacta</h2>
+        <hr>
+        <section class="block block--center">
+        <div class="contact__info card">
+          <i class="fa fa-map-marker fa-2x"></i>
+          <p>43519 El Perelló</p>
+        </div>
+        <div class="contact__info card">
+          <i class="fa fa-envelope fa-2x"></i>
+          <p>alex@baesaudiovisual.com</p>
+        </div>
+        <div class="contact__info card">
+          <i class="fa fa-phone fa-2x"></i>
+          <p>+34 655 655 655</p>
+        </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <ul class="list list-inline">
+        <li>Avís legal</li>
+        <li>Politica de privacitat</li>
+        <li>Cookies </li>
+      </ul>
+    </footer>
+    
+    <script src="./assets/scripts/main.js"></script>
   </body>
 </html>

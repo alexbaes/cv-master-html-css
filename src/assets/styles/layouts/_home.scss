@@ -1,21 +1,281 @@
 body {
   margin: 0;
-  padding: 30px;
+  padding: 0;
   font-family: $font-family-sans-serif;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  color: $white;
+  background-color: $black;
 }
 
-.uoc-logo {
-  display: block;
-  margin-bottom: 20px;
-  width: 300px;
-  height: auto;
-}
-
-.uoc-title {
+h1 {
+  font-size: 3rem;
   font-family: $font-family-serif;
-  font-size: 36px;
-  font-weight: 700;
-  color: $uoc-corporate;
+
+  @media ( min-width: 768px ) { font-size: 5rem; }
+
 }
+
+h2 {
+  font-size: 2rem;
+  font-family: $font-family-serif;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+nav {
+  padding: 20px 0;
+  justify-content: center;
+  border-bottom: 1px solid $gray;
+
+  @media (min-width: 768px) {
+
+    justify-content: left;
+    padding: 20px 50px; 
+
+  }
+
+}
+
+main { 
+  padding: 20px; 
+
+  @media (min-width: 768px) {
+
+    max-width: 1200px;
+    margin: 0 auto; 
+
+  }
+
+}
+
+article { margin-top: 30px; }
+
+figure {
+  margin-left: 0;
+  margin-bottom: 50px;
+  width: 100%;
+  overflow: hidden;
+  color: $white;
+  background-color: $green;
+
+
+  @media (min-width: 768px) { max-width: 350px; }
+
+}
+
+figcaption {
+  padding: 20px;
+}
+
+footer {
+  padding: 20px;
+  background-color: $gray;
+  color: $black;
+
+  @media (min-width: 768px) { padding-left: 50px; }
+
+}
+
+/*------------------------------------*\
+  #GENERAL-STYLES
+\*------------------------------------*/
+
+.links {
+  color: $white;
+  text-decoration: none;
+
+  @media (min-width: 768px) { text-decoration: underline; }
+
+}
+
+.btn {
+  padding: 7px 12px;
+  background-color: $brown;
+  border-radius: 5px;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.list-inline {
+
+  li {
+    display: inline;
+    padding: 0 10px;
+  }
+
+}
+
+.block {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-flow: row wrap;
+
+  }
+
+}
+
+@media (min-width: 768px) {
+
+
+  .block--mr-50 { margin-right: 50px; }
+
+  .block--40 { width: nth((40%, 50%, 60%, 100%), 1); }
+  .block--50 { width: nth((40%, 50%, 60%, 100%), 2); }
+  .block--60 { width: nth((40%, 50%, 60%, 100%), 3); }
+  .block--100 { width: nth((40%, 50%, 60%, 100%), 4); }
+
+}
+
+.block--center{
+  align-items: center;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 0 25px 3px #000;
+}
+
+.flex--row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+/*------------------------------------*\
+  #HEADER-SECTION
+\*------------------------------------*/
+
+
+.header__hero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/corbata-traje-hombre.jpg);
+  background-color: $black;
+  height: 440px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @function heroHeight($num){
+    @return $num/2;
+  }
+
+  @media (min-width: 768px) { height: heroHeight(1200px); }
+
+}
+
+
+/*------------------------------------*\
+  #INTRO-SECTION
+\*------------------------------------*/
+
+.intro { 
+  margin: 100px 20px; 
+
+  @media (min-width: 768px) {
+    margin: 200px 50px; }
+}
+
+.frase{
+  font-size: 2rem;
+  font-style: italic;
+
+  @media (min-width: 768px) { 
+    text-align: center; 
+    font-size: 3rem;
+  }
+}
+
+
+/*------------------------------------*\
+  #HABILITATS-SECTION
+\*------------------------------------*/
+
+.progress-bar {
+  padding: 3px;
+  width: 100%;
+  margin: 20px 0;
+  background-color: #f7f7f7;
+}
+
+.progress-bar--90 { width: nth((40%,70%,80%,90%),4); }
+
+.progress-bar--80 { width: nth((40%,70%,80%,90%),3); }
+
+.progress-bar--70 { width: nth((40%,70%,80%,90%),2); }
+
+.progress-bar--40 { width: nth((40%,70%,80%,90%),1); }
+
+.progress-bar--fill{
+  padding-left: 10px;
+  display: block;
+  height: 22px;
+  background-color: $green;
+}
+
+/*------------------------------------*\
+  #PROJECTES-SECTION
+\*------------------------------------*/
+
+.block--100 { width: 100%; }
+
+/*------------------------------------*\
+  #EXPERIENCIA-SECTION
+\*------------------------------------*/
+
+.block__element {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 90%;
+  background-color: $brown;
+  
+ 
+  .block__element-title {
+    margin-bottom: -20px;
+    margin-top: 5px;
+    color: $black;
+    text-transform: uppercase;
+    
+
+  }
+
+}
+
+
+/*------------------------------------*\
+  #CONTACT-SECTION
+\*------------------------------------*/
+
+.contact__info {
+  width: 50%;
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+  background-color: $green;
+
+  @media screen and (min-width: 768px) {
+    width: 20%;
+    margin: 30px;
+
+  }
+
+}
+
+
+
+
+
+
